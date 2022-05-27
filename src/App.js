@@ -5,18 +5,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/crew">
-          <Crew />
-        </Route>
-        <Route exact path="/destination">
-          <Destination />
-        </Route>
-        <Route exact path="/technology">
-          <Technology />
-        </Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/crew" element={<Crew />}></Route>
+        <Route path="/destination" element={<Destination />}></Route>
+        <Route path="/technology" element={<Technology />}></Route>
       </Routes>
     </Router>
   );
